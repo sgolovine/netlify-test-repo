@@ -10,6 +10,7 @@
     "gatsby-plugin-image": "^1.6.0",
     "gatsby-plugin-manifest": "^3.6.0",
     "gatsby-plugin-offline": "^4.6.0",
+    "gatsby-plugin-plausible": "^0.0.7",
     "gatsby-plugin-react-helmet": "^4.6.0",
     "gatsby-plugin-sharp": "^3.6.0",
     "gatsby-source-filesystem": "^3.6.0",
@@ -20,6 +21,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "patch-package": "^6.4.7",
     "prettier": "2.2.1"
   },
   "keywords": [
@@ -31,9 +33,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "postinstall": "patch-package"
   },
   "repository": {
     "type": "git",
